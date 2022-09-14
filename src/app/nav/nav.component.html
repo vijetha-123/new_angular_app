@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><b style="font-family:cursive">Plant Gallery</b></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,13 +14,22 @@
             <a class="nav-link active" routerLink="About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#" tabindex="-1" >Cart</a>
+            <a class="nav-link active" routerLink="cart" tabindex="-1" >Cart</a>
           </li>
+          <li><input [(ngModel)]="random" type="text" class="form-control me-2" type="search" #productname placeholder="ENTER YOUR PRODUCT" aria-label="Search" name="first">
+
+        </li>
+        <li>
+          <button class="btn btn-outline-success d-flex" type="submit" (click)="search_product(productname.value);" style="color:aliceblue ;">Search</button>
+          
+        </li>
+        <li>
+          
+        </li>
         </ul>
         <form class="d-flex">
-          <input [(ngModel)]="random" type="text" class="form-control me-2" type="search" #productname placeholder="Search" aria-label="Search" name="first">
-          <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);" style="color:aliceblue ;">Search</button>
-          <app-search [product]="productentered"></app-search>
+          <app-search [product]="productentered" class="d-flex"></app-search>
+          <button class="btn btn-outline-secondary" type="button" style="color:black" >Login</button>
         </form>
       </div>
     </div>

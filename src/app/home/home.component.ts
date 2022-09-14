@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   public img1='/assets/images/1.jpg';
   public img2='/assets/images/2.jpg';
   public img3='/assets/images/3.jpg';
-
+ 
   ngOnInit(): void {
   }
 
