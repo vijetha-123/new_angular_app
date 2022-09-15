@@ -8,6 +8,11 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SearchComponent } from './search/search.component';
 import { CartComponent } from './cart/cart.component';
+import { LoginComponent } from './login/login.component';
+import { SeedsComponent } from './seeds/seeds.component';
+import { SeedsdealsComponent } from './seeds/seedsdeals/seedsdeals.component';
+import { AllproductsComponent } from './allproducts/allproducts.component';
+import { AdvertiseComponent } from './advertise/advertise.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { CartComponent } from './cart/cart.component';
     HomeComponent,
     AboutComponent,
     SearchComponent,
-    CartComponent
+    CartComponent,
+    LoginComponent,
+    SeedsComponent,
+    SeedsdealsComponent,
+    AllproductsComponent,
+    AdvertiseComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+[{
+    "pid":"001",
+"image":"/assets/images/kochia-plant_seeds.jpg",
+"pname":"Kochia plant seeds",
+"pdescription":"It grow best in lots of indirect light (direct sunlight can cause the leaves to scorch)",
+"Status":"In Stock"
+  },
+  {
+    "pid":"002",
+"image":"/assets/images/seeds-lavender.jpg",
+"pname":"lavender seeds",
+"pdescription":"These hardy plants have been known to survive for 20 years or longer",
+"Status":"In Stock"
+  },
+  {
+    "pid":"003",
+"image":"/assets/images/seeds-lavender.jpg",
+"pname":"Lanthena camera seeds",
+"pdescription":"It is one of the top houseplants for improving indoor air quality",
+"Status":"Out of Stock"
+  },
+  {
+    "pid":"004",
+"image":"/assets/images/-seeds-vinca-f.jpg",
+"pname":"Vinca seeds",
+"pdescription":"This seed, with its small rounded leaf, improved environment is known to be a lucky plant.",
+"Status":"In Stock"
+  },{
+    "pid":"005",
+"image":"/assets/images/amaranthus-seeds.jpg",
+"pname":"Amaranthus Seeds",
+"pdescription":"It grow best in lots of indirect light (direct sunlight can cause the leaves to scorch)",
+"Status":"In Stock"
+  }
+
+]

@@ -1,31 +1,43 @@
+
 <body>
 <div class="row" >
-    <div class="col col-4" *ngFor="let product of products" [ngSwitch]="product.Status">
+    <div class="col col-4" *ngFor="let prod of product" [ngSwitch]="prod.Status">
 <div class="card" style="width: 18rem;" *ngSwitchCase="'In Stock'" >
     <div class="card-body">
-      <img [src]=product.image >
-      <h6 class="card-title" >{{product.pid}}</h6>
-      <h5 class="card-title">{{product.pname}}</h5>
-      <p class="card-text stylebinding">{{product.pdescription}}</p>
-      <a href="#" class="btn btn-outline-success" >{{product.Status}}</a>
+      <img [src]=prod.image >
+      <h6 class="card-title" >{{prod.pid}}</h6>
+      <div>
+      <h5 class="card-title">{{prod.pname}}</h5>
+      <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+    </div>
+    <div [hidden]="productdetail">
+      <p class="stylebinding">{{prod.pdescription}}</p>
+    </div>
+      <a href="#" class="btn btn-outline-success" >{{prod.Status}}</a>
     </div>
   </div>
   <div class="card" style="width: 18rem;" *ngSwitchCase="'Out of Stock'" >
     <div class="card-body">
-      <img [src]=product.image >
-      <h6 class="card-title">{{product.pid}}</h6>
-      <h5 class="card-title">{{product.pname}}</h5>
-      <p class="card-text stylebinding">{{product.pdescription}}</p>
-      <a href="#" class="btn btn-danger" >{{product.Status}}</a>
+      <img [src]=prod.image >
+      <h6 class="card-title">{{prod.pid}}</h6>
+      <div>
+      <h5 class="card-title">{{prod.pname}}</h5>
+      <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+    </div>
+      <div [hidden]="productdetail">
+      <p class="stylebinding">{{prod.pdescription}}</p>
+    </div>
+      <a href="#" class="btn btn-danger" >{{prod.Status}}</a>
     </div>
   </div>
   <div class="card" style="width: 18rem;" *ngSwitchDefault >
     <div class="card-body">
-      <img [src]=product.image >
-      <h6 class="card-title">{{product.pid}}</h6>
-      <h5 class="card-title">{{product.pname}}</h5>
-      <p class="card-text stylebinding">{{product.pdescription}}</p>
-      <a href="#" class="btn btn-warning" >{{product.Status}}</a>
+      <img [src]=prod.image >
+      <h6 class="card-title">{{prod.pid}}</h6>
+      <h5 class="card-title">{{prod.pname}}</h5>
+      <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+      <p class="card-text stylebinding">{{prod.pdescription}}</p>
+      <a href="#" class="btn btn-warning" >{{prod.Status}}</a>
     </div>
   </div>
 </div>

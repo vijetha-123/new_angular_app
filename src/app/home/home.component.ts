@@ -9,9 +9,9 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
   title = 'HEY THERE!';
-  public img1='/assets/images/1.jpg';
-  public img2='/assets/images/2.jpg';
-  public img3='/assets/images/3.jpg';
+  public img1='/assets/images/111.jpeg';
+  public img2='/assets/images/t.jpg';
+  public img3='/assets/images/indoor-plants.jpg';
  
   ngOnInit(): void {
   }
