@@ -6,3 +6,13 @@ img{
     margin-bottom: 10px;
     border-radius: 10px;
 }
+.backgd{
+    background-image: url(/assets/images/18.jpg) ; 
+    height: 1200px;
+    width: 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+

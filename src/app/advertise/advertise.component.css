@@ -1,0 +1,10 @@
+iframe{
+    height: 300px;
+    width:300px;
+    border-radius: 20px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: solid;
+
+}

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import * as seedproduct from '../seeds.json';
+import { Component, OnInit,Input } from '@angular/core';
 @Component({
   selector: 'app-seedsdeals',
   templateUrl: './seedsdeals.component.html',
@@ -8,13 +7,11 @@ import * as seedproduct from '../seeds.json';
 export class SeedsdealsComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
   }
-  seed:any=(seedproduct as any).default;
+  @Input()products:any
 
   productdetail=false;
-
   showproductDetailsToggle(){
     this.productdetail=!this.productdetail;
   }
@@ -22,11 +19,11 @@ export class SeedsdealsComponent implements OnInit {
     var content='';
     if(this.productdetail)
     {
-      content='fa-solid fa-arrow-up';
+      content='fa-solid fa-arrow-down';
     }
     else
     {
-      content='fa-solid fa-arrow-down';
+      content='fa-solid fa-arrow-up';
     }
     return content;
   }

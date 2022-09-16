@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as pro from './seeds.json';
 @Component({
   selector: 'app-seeds',
   templateUrl: './seeds.component.html',
@@ -10,7 +11,7 @@ export class SeedsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  seeds:any=(pro as any).default;
 }
 
 

@@ -1,20 +1,17 @@
-
-
-<div *ngFor="let sp of seed">
-    <div class="row">
+   <div class="row">
         <!--2st-->
             <div class="card-body col-lg-12">
                 <div class="row" style="margin-top: 10px;border-style: solid;border-color: black;">
                     <div class="col-lg-3">
-                        <img [src]="sp.image">
+                        <img [src]="products.image">
                     </div>
                     <div class="col-lg-9" style="margin-top:20px">
                         <div>
-                            {{sp.pname}}
+                            {{products.pname}}
                             <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
                         </div>
                         <div [hidden]="productdetail">
-                                {{sp.pdescription}}
+                                {{products.pdescription}}
                         </div>
                     </div>
                 </div>
@@ -23,4 +20,3 @@
         </div>
 
     </div>
-</div>
