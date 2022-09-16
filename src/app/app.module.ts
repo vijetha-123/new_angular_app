@@ -13,6 +13,8 @@ import { SeedsComponent } from './seeds/seeds.component';
 import { SeedsdealsComponent } from './seeds/seedsdeals/seedsdeals.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { AdvertiseComponent } from './advertise/advertise.component';
+import { CounterComponent } from './counter/counter.component';
+import { CounterchildComponent } from './counter/counterchild/counterchild.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { AdvertiseComponent } from './advertise/advertise.component';
     SeedsComponent,
     SeedsdealsComponent,
     AllproductsComponent,
-    AdvertiseComponent
+    AdvertiseComponent,
+    CounterComponent,
+    CounterchildComponent
   ],
   imports: [
     BrowserModule,
