@@ -15,6 +15,7 @@ import { AllproductsComponent } from './allproducts/allproducts.component';
 import { AdvertiseComponent } from './advertise/advertise.component';
 import { CounterComponent } from './counter/counter.component';
 import { CounterchildComponent } from './counter/counterchild/counterchild.component';
+import { MedplantsComponent } from './medplants/medplants.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CounterchildComponent } from './counter/counterchild/counterchild.compo
     AllproductsComponent,
     AdvertiseComponent,
     CounterComponent,
-    CounterchildComponent
+    CounterchildComponent,
+    MedplantsComponent
   ],
   imports: [
     BrowserModule,
