@@ -20,9 +20,9 @@
               Products
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" routerLink="cart" >Plants</a></li>
+              <li><a class="dropdown-item" routerLink="cart" >Indoor Plants</a></li>
               <li><a class="dropdown-item" routerLink="seed">Seeds</a></li>
-      
+              <li><a class="dropdown-item" routerLink="medplant">Medicinal Plants</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -42,7 +42,7 @@
         <form class="d-flex">
           <app-search [product]="productentered" class="d-flex" style="margin-right: 20px;"></app-search>
           <br>
-          <button style="color: black;margin-right: 20px ;border-radius: 10px;"><i class="fa-solid fa-phone" ></i>Contact Us</button>
+          <button style="color: black;margin-right: 20px ;border-radius: 10px;" routerLink="cont"><i class="fa-solid fa-phone" ></i>Contact Us</button>
           <button class=" nav-link active" routerLink="login" style="color: black;margin-right: 50px ;border-radius: 10px;" >Login</button>
         </form>
       </div>

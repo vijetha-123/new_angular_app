@@ -65,13 +65,6 @@ export class MedicinalService {
     price:123,
     img:'../assets/images/Brahmi leaves.jpg'
 
-  },{
-    Pid:1,
-    pname:'Asthma plant',
-    pdes:'wqws',
-    price:123,
-    img:'../assets/images/asthma plant.jpg'
-
   }
 ];
 

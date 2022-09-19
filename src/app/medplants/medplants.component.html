@@ -1,19 +1,18 @@
 <body>
     <div class="row"  >
-        <div class="col col-4" *ngFor="let m of medic" >
+        <div class="col col-3" *ngFor="let m of medic" >
     <div class="card" style="width: 18rem;margin-top: 20px;margin-right: 20px;margin-left: 30px; border-radius: 20px;"  >
         <div class="card-body">
           <img [src]=m.img alt="">
-          <h6 class="card-title" >{{m.Pid}}</h6>
           <div>
           <h5 class="card-title">{{m.pname}}</h5>
           <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
         </div>
         <div [hidden]="productdetail">
-          <p class="stylebinding">{{m.pdes}}</p>
-          
-        </div>
+          <!--p class="stylebinding">{{m.pdes}}</p-->
           {{m.price| currency: 'INR'}}
+        </div>
+          
         </div>
       </div>
       

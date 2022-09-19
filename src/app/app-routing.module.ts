@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
 import { SeedsComponent} from './seeds/seeds.component';
+import { MedplantsComponent } from './medplants/medplants.component';
+import { ContactdetailsComponent } from './contactdetails/contactdetails.component';
 
 
 const routes: Routes = [
@@ -12,7 +14,9 @@ const routes: Routes = [
   { path:'About',component:AboutComponent},
   { path:'cart',component:CartComponent},
   {path:'login',component:LoginComponent},
-  { path:'seed',component:SeedsComponent}
+  { path:'seed',component:SeedsComponent},
+  { path:'medplant',component:MedplantsComponent},
+  { path:'cont',component:ContactdetailsComponent}
   
 ];
 

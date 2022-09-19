@@ -1,0 +1,24 @@
+
+<br>
+<br>
+<br>
+<div *ngFor="let c of contac">
+<form class="card contact" >
+    <fieldset  style="color: black;margin-right: 50px ;border-radius: 10px;" >
+        <h2>CONTACT DETAILS</h2>
+        <hr>
+        <button class="btn btn-success">Track order</button>
+        <button class="btn" >FAQS</button><br><br>
+        <div class="contact-details phone"><i class="fa-solid fa-phone" ></i><b>{{c.pnum}}</b><br>
+        <span>{{c.ptime}}</span>
+        </div>
+        <br>
+        <br>
+        <p><i class="fa-solid fa-envelope"></i>{{c.pmail}}</p>
+        <hr>
+        <p><i class="fa-solid fa-location-dot"></i>{{c.pdes}}</p>
+        <br>
+
+    </fieldset>
+</form>
+</div>

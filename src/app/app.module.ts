@@ -16,6 +16,7 @@ import { AdvertiseComponent } from './advertise/advertise.component';
 import { CounterComponent } from './counter/counter.component';
 import { CounterchildComponent } from './counter/counterchild/counterchild.component';
 import { MedplantsComponent } from './medplants/medplants.component';
+import { ContactdetailsComponent } from './contactdetails/contactdetails.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MedplantsComponent } from './medplants/medplants.component';
     AdvertiseComponent,
     CounterComponent,
     CounterchildComponent,
-    MedplantsComponent
+    MedplantsComponent,
+    ContactdetailsComponent
   ],
   imports: [
     BrowserModule,

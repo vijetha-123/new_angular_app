@@ -26,11 +26,11 @@ export class MedplantsComponent implements OnInit {
     var content='';
     if(this.productdetail)
     {
-      content='fa-solid fa-arrow-up';
+      content='fa-solid fa-arrow-down';
     }
     else
     {
-      content='fa-solid fa-arrow-down';
+      content='fa-solid fa-arrow-up';
     }
     return content;
   }
