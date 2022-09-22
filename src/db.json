@@ -1,0 +1,104 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "image": "/assets/images/8.jpg",
+      "pname": "zz Plant",
+      "pdescription": "ZZ plants grow best in lots of indirect light (direct sunlight can cause the leaves to scorch)",
+      "Status": "In Stock"
+    },
+    {
+      "id": 2,
+      "image": "/assets/images/9.jpg",
+      "pname": "Star Plant",
+      "pdescription": "These hardy plants have been known to survive for 30 years or longer",
+      "Status": "In Stock"
+    },
+    {
+      "id": 3,
+      "image": "/assets/images/10.jpg",
+      "pname": "Pothos Plant",
+      "pdescription": "pothos is one of the top houseplants for improving indoor air quality",
+      "Status": "Out of Stock"
+    },
+    {
+      "id": 4,
+      "image": "/assets/images/11.jpg",
+      "pname": "Auspcious Jade",
+      "pdescription": "Jade plant, with its small rounded leaf, improved environment is known to be a lucky plant.",
+      "Status": "In Stock"
+    },
+    {
+      "id": 5,
+      "image": "/assets/images/12.jpg",
+      "pname": "good luck",
+      "pdescription": "ZZ plants grow best in lots of indirect light (direct sunlight can cause the leaves to scorch)",
+      "Status": "In Stock"
+    },
+    {
+      "id": 6,
+      "image": "/assets/images/13.jpg",
+      "pname": "Haworthia plant",
+      "pdescription": "These hardy plants have been known to survive for 30 years or longer",
+      "Status": "Out of Stock"
+    },
+    {
+      "id": 7,
+      "image": "/assets/images/14.jpg",
+      "pname": "jade plant",
+      "pdescription": "ZZ plants grow best in lots of indirect light (direct sunlight can cause the leaves to scorch)",
+      "Status": "Out of Stock"
+    },
+    {
+      "id": 8,
+      "image": "/assets/images/15.jpg",
+      "pname": "money plant",
+      "pdescription": "These hardy plants have been known to survive for 30 years or longer",
+      "Status": "In Stock"
+    },
+    {
+      "id": 9,
+      "image": "/assets/images/16.jpg",
+      "pname": "Pink Syngonium Plant",
+      "pdescription": "ZZ plants grow best in lots of indirect light (direct sunlight can cause the leaves to scorch)",
+      "Status": "Out of Stock"
+    },
+    {
+      "id": 11,
+      "image": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhbnR8ZW58MHx8MHx8&w=1000&q=80",
+      "pname": "plant",
+      "pdescription": "jkwndwe",
+      "Status": "In stock"
+    }
+  ],
+  "users": [
+    {
+      "username": "VijethaSankesha",
+      "useremail": "dishasankesha@gmail.com",
+      "password": "dis12345",
+      "mobile": "9483350891",
+      "id": 19
+    },
+    {
+      "username": "dishas",
+      "useremail": "dishasankea@gmail.com",
+      "password": "dis81",
+      "mobile": "97890350891",
+      "id": 21
+    },
+    {
+      "username": "dish",
+      "useremail": "sankesha@gmail.com",
+      "password": "789",
+      "mobile": "9483350867",
+      "id": 22
+    },
+    {
+      "username": "wdwd",
+      "useremail": "disnk@gmail.com",
+      "password": "123",
+      "mobile": "948335079",
+      "id": 23
+    }
+  ]
+}

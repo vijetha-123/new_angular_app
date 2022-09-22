@@ -1,0 +1,21 @@
+img{
+    height: 300px;
+    width:100%
+}
+h6{
+    text-align: center;
+}
+.stylebinding{
+    color:chocolate;
+    text-shadow: 2px 2px 2px burlywood;
+}
+
+body{
+    background-image: url(/assets/images/18.jpg) ; 
+    height: 2000px;
+    width: 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}

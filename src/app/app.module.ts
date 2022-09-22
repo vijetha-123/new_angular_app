@@ -17,6 +17,11 @@ import { CounterComponent } from './counter/counter.component';
 import { CounterchildComponent } from './counter/counterchild/counterchild.component';
 import { MedplantsComponent } from './medplants/medplants.component';
 import { ContactdetailsComponent } from './contactdetails/contactdetails.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+import { IndoorComponent } from './indoor/indoor.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +39,18 @@ import { ContactdetailsComponent } from './contactdetails/contactdetails.compone
     CounterComponent,
     CounterchildComponent,
     MedplantsComponent,
-    ContactdetailsComponent
+    ContactdetailsComponent,
+    ProductdetailsComponent,
+    RegisterComponent,
+    IndoorComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

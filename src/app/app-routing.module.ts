@@ -7,7 +7,9 @@ import { LoginComponent } from './login/login.component';
 import { SeedsComponent} from './seeds/seeds.component';
 import { MedplantsComponent } from './medplants/medplants.component';
 import { ContactdetailsComponent } from './contactdetails/contactdetails.component';
-
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { RegisterComponent } from './register/register.component';
+import { IndoorComponent } from './indoor/indoor.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -16,7 +18,10 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   { path:'seed',component:SeedsComponent},
   { path:'medplant',component:MedplantsComponent},
-  { path:'cont',component:ContactdetailsComponent}
+  { path:'cont',component:ContactdetailsComponent},
+  { path:'proo',component:ProductdetailsComponent},
+  { path:'register',component:RegisterComponent},
+  { path: 'indoor',component:IndoorComponent}
   
 ];
 

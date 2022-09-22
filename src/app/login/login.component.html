@@ -1,13 +1,82 @@
 <br>
 <br>
 <br>
-<form style="margin:10px;text-align: center;">
-    <fieldset>
-    <label><b>Username</b></label><br>
-    <input type="text"><br>
-    <label><b>Password</b></label><br>
-    <input type="password"><br><br>
-    <button>login</button>
-    <p>Dont have an account?<a href="">Sign up</a></p>
-</fieldset>
-</form>
+<div class="mt-5">
+    <div class="login-form">
+    <form [formGroup]="loginform" (ngSubmit)="login()" class="d-flex flex-column" style="margin: solid; margin-right:200px; margin-left:200px">
+      
+        
+    
+        <div class="form-group ">
+          <input type="email" class="form-control" name="useremail" formControlName="useremail" placeholder="enter email">
+          <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">email is required</label>
+          <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">must be valid mail id</label>
+    
+        </div>
+        <br>
+    
+        <div class="form-group ">
+          <input type="password" class="form-control" name="password" formControlName="password" placeholder="enter password">
+          <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">password is required</label>
+          <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">atleast 6 character</label>
+    
+        </div>
+        <br>
+    
+        
+        <br>
+    
+        <button type="submit" class="btn btn-warning" href="">login</button>
+        <div class="text-center">Already have an account?<a href="register" target="_blank">dont have an account? REGISTER</a>
+        </div>
+  
+      </form>
+    
+    </div>
+    </div>
+  <!--
+
+
+  <div class="mt-5">
+    <div class="col-md-12 min-vh-100 d-flex flex-column">
+      <div class="row">
+          <div class="col-lg-6 col-md-8 mx-auto">
+                    <div class="login-form">
+                            <form class="mt-5" [formGroup]="loginForm" (ngSubmit)="login()">
+                                <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Login with Amazon</h2>
+                                <br>
+                                <div class="mt-5">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="useremail" formControlName="useremail" placeholder="User Email">
+                                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">Email is required</label>
+                                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must be a valid email address</label>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
+                                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Password is required</label>
+                                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-warning" href="">Login</button>
+                                
+                                <div class="ms-fs-12 text-center ms-mt-x ms-mb-m forgot">
+                                    <p style="padding-top:30px">
+                                        <a href="register" class="secondary ng-binding" target="_blank">
+                                            Don't have an account? Register...
+                                        </a>
+                                    </p><p>
+                                    </p>
+                                </div>
+                                </div>
+                            </form>
+                        </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+  -->
+
+
+
