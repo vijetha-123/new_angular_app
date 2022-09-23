@@ -6,7 +6,8 @@
     <form [formGroup]="loginform" (ngSubmit)="login()" class="d-flex flex-column" style="margin: solid; margin-right:200px; margin-left:200px">
       
         
-    
+    <h2 style="text-align: center;">LOGIN</h2>
+    &nbsp;
         <div class="form-group ">
           <input type="email" class="form-control" name="useremail" formControlName="useremail" placeholder="enter email">
           <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">email is required</label>

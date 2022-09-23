@@ -1,0 +1,58 @@
+<br>
+<br>
+<br>
+<div class="container">
+<h1>
+  
+</h1>
+<hr>
+<div class="row">
+  <div class="col-sm">
+    <h3>Product image</h3>
+  </div>
+  <div class="col-sm">
+    <h3>Product name</h3>
+  </div>
+  <div class="col-sm">
+    <h3>Quantity</h3>
+  </div>
+  <div class="col-sm">
+    <h3>Price</h3>
+  </div>
+  <div class="col-sm">
+    <h3>Remove item</h3>
+  </div>
+</div>
+
+<hr>
+
+<div class="row" *ngFor="let item of cart">
+  <div class="col-sm">
+    <img src={{item.img}}>
+  </div>
+  <div class="col-sm">
+    <h3>{{item.pname}} </h3>
+  </div>
+  <div class="col-sm">
+    <h3>{{item.quantity}} </h3>
+  </div>
+  <div class="col-sm">
+    <h3>{{item.price}} </h3>
+  </div>
+  <div class="col-sm">
+    <h3>{{item.totalprice}} </h3>
+    <button class="btn btn-danger" (click)="delete(item)"><i class="fa-solid fa-trash"></i></button>
+  </div>
+  
+</div>
+</div>
+<div class="row">
+  <a (click)="onClick()" href="">Shop More</a>
+  <a href="" target="_blank">CheckOut</a>
+<div>
+  <h2>Total: {{totalPrice(cart)|currency:'INR'}}</h2>
+</div>
+</div>
+<div>
+  
+</div>

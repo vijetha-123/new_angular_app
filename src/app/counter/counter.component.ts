@@ -11,7 +11,7 @@ export class CounterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  count:number=1;
+  count=1;
   receivedValue($event:number){
     this.count=$event;
   }

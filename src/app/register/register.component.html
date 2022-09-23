@@ -4,7 +4,7 @@
 <div class="mt-5">
 <div class="login-form">
 <form [formGroup]="registerForm" (ngSubmit)="submitHandler()" class="d-flex flex-column" style="margin: solid; margin-right:200px; margin-left:200px">
-   
+  <h2 style="text-align: center;">REGISTER</h2>
     <div class="form-group ">
       <input type="text" class="form-control" name="username" formControlName="username" placeholder="enter username">
       <label class="error ng-binding" *ngIf="submitted && f['username'].invalid">name is required</label>

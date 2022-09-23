@@ -1,13 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "image": "/assets/images/8.jpg",
-      "pname": "zz Plant",
-      "pdescription": "ZZ plants grow best in lots of indirect light (direct sunlight can cause the leaves to scorch)",
-      "Status": "In Stock"
-    },
-    {
       "id": 2,
       "image": "/assets/images/9.jpg",
       "pname": "Star Plant",
@@ -99,6 +92,46 @@
       "password": "123",
       "mobile": "948335079",
       "id": 23
+    },
+    {
+      "username": "dshas",
+      "useremail": "dishkesha@gmail.com",
+      "password": "qwe1234567",
+      "mobile": "9903350891",
+      "id": 24
+    },
+    {
+      "username": "dish",
+      "useremail": "dishsan@gmail.com",
+      "password": "12345678qwer",
+      "mobile": "9483909345",
+      "id": 25
+    }
+  ],
+  "carts": [
+    {
+      "pname": "gooseberry",
+      "price": 123,
+      "img": "../assets/images/gooseberry.jpg",
+      "id": 1
+    },
+    {
+      "pname": "Ashwagandha",
+      "price": 123,
+      "img": "../assets/images/Ashwagandha.jpg",
+      "id": 2
+    },
+    {
+      "pname": "shatavari",
+      "price": 123,
+      "img": "../assets/images/shatavari.jpg",
+      "id": 3
+    },
+    {
+      "pname": "sandalwood",
+      "price": 123,
+      "img": "../assets/images/sandalwood.jpg",
+      "id": 4
     }
   ]
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit,Output,EventEmitter } from '@angular/core';
+import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-counterchild',
@@ -8,12 +8,15 @@ import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 export class CounterchildComponent implements OnInit {
 
   constructor() { }
-  total=1;
+  @Input() total=1;
+  
   min=true;
   @Output() countEmitter=new EventEmitter();
+  @Output() quantityEmitter=new EventEmitter();
 
 postValue(){
   this.countEmitter.emit(this.total);
+  this.quantityEmitter.emit(this.total);
 }
 
   ngOnInit(): void {
