@@ -30,7 +30,7 @@ export class MedplantsComponent implements OnInit {
     this.cart.img=product.img;
     this.cart.price=product.price;
     this.cart.totalprice=product.totalPrice;
-    this.cart.quantity=product.quantity;
+    this.cart.quantity=this.quantity;
     this.cart.pid=product.pid;
     this.cartser.addToCart(this.cart);
     console.log(product.id);

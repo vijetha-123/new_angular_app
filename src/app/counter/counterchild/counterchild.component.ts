@@ -7,7 +7,7 @@ import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
 })
 export class CounterchildComponent implements OnInit {
 
-  constructor() { }
+  
   @Input() total=1;
   
   min=true;
@@ -19,8 +19,7 @@ postValue(){
   this.quantityEmitter.emit(this.total);
 }
 
-  ngOnInit(): void {
-  }
+  
   
   decrement(){
     if(this.total==1){
@@ -40,7 +39,9 @@ postValue(){
     this.min=true;
      this.postValue();
   }
-  
+  constructor() { }
+  ngOnInit(): void {
+  }
 }
 
 

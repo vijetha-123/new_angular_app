@@ -4,6 +4,7 @@ import { CartserviceService } from '../cartservice.service';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
+
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -17,7 +18,7 @@ export class CartComponent implements OnInit {
     pid:0,
     pname:'',
     pdescription:'',
-    price:'',
+    price:'0',
     img:'',
     quantity:1,
     totalprice:1

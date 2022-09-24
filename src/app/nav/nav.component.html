@@ -1,13 +1,14 @@
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary ">
-    <div class="container-fluid">
+
+  <!--nav class="navbar navbar-expand-lg " style="background: transparent;">
+    <div class="container">
 
       <a class="navbar-brand" href="#"><b style="font-family:cursive">Plant Gallery</b></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="nav me-auto mb-2 mb-lg-0"
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" routerLink="">Home</a>
           </li>
@@ -33,7 +34,7 @@
           </li>
           
           <li class="nav-item" *ngIf="auth">
-            <a class="nav-link active " routerLink="cart" tabindex="-1" >Cart<span class="badge bg-secondary"><sup>{{cartCount}}</sup></span></a>
+            <a class="nav-link active " routerLink="cart" tabindex="-1" >Cart<span class="badge bg-secondary">{{cartCount}}</span></a>
           </li>
         
           <li ><input [(ngModel)]="random" type="text" class="form-control me-2" type="search" #productname placeholder="ENTER YOUR PRODUCT" aria-label="Search" name="first"  >
@@ -46,9 +47,67 @@
         <form class="d-flex" *ngIf="auth">
           <app-search [product]="productentered" class="d-flex" style="margin-right: 20px;"></app-search>
           <br>
-          <button style="color: black;margin-right: 20px ;border-radius: 10px;" routerLink="cont"><i class="fa-solid fa-phone" *ngIf="auth" ></i>Contact Us</button>
-          <button class=" nav-link active" routerLink="login" style="color: black;margin-right: 50px ;border-radius: 10px;" *ngIf="auth">Logout</button>
+          <button style="margin-right: 20px ;border-radius: 10px;" routerLink="cont"><i class="fa-solid fa-phone" *ngIf="auth" ></i>Contact Us</button>
+          <button class=" nav-link active" routerLink="login" style="margin-right: 50px ;border-radius: 10px;" *ngIf="auth">Logout</button>
         </form>
       </div>
     </div>
+  </nav-->
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark " style="background: transparent;">
+    <header>
+    
+      <div class="logo">
+        <img src="/assets/images/20.png">
+      </div>
+      <h2 class="navbar-brand" ><b style="font-family:cursive">Plant Gallery</b></h2>
+      <div class="container-fluid">
+      <div class="menu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="register" *ngIf="!auth">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="About" *ngIf="auth">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="proo" *ngIf="auth">Productdetails</a>
+          </li>
+          
+          <li class="nav-item dropdown" *ngIf="auth">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:  #0f8135;">
+              <li><a class="dropdown-item" routerLink="indoor" style="background-color:  #0f8135;" >Indoor Plants</a></li>
+              <li><a class="dropdown-item" routerLink="seed" style="background-color:  #0f8135;">Seeds</a></li>
+              <li><a class="dropdown-item" routerLink="medplant" style="background-color:  #0f8135;">Medicinal Plants</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" *ngIf="auth">
+            <a class="nav-link active " routerLink="cart" tabindex="-1" >Cart<span class="badge bg-secondary">{{cartCount}}</span></a>
+          </li>
+          <li ><input [(ngModel)]="random" type="text" class="form-control me-2" type="search" #productname placeholder="ENTER YOUR PRODUCT" aria-label="Search" name="first"  >
+        </li>
+        <li >
+          <button class="btn btn-outline-success d-flex" type="submit" (click)="search_product(productname.value);" style="color:aliceblue ;">Search</button>     
+        </li>
+        <li class="nav-item" *ngIf="auth">
+          <app-search [product]="productentered" class="d-flex" style="margin-right: 20px;"></app-search>
+        </li>
+          <li class="nav-item" style="float: right;margin-right: 20px ;">
+            <a class="nav-link active" routerLink="cont" *ngIf="auth"><i class="fa-solid fa-phone" ></i>Contact Us</a>
+          </li>
+          <li class="nav-item menu" style="float: left;margin-right: 20px ;">
+            <a class="nav-link active" routerLink="login"  *ngIf="auth">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
   </nav>
+  
+

@@ -1,7 +1,8 @@
-<div>
-    <div class="btn btn-info">
-<button class="btn btn-info" [disabled]="!min" (click)="decrement()">-</button>
+
+<div >
+    <div class="btn btn-dark"  >
+<button class="btn" [disabled]="!min" (click)="decrement()" style="color: white;" >-</button>
 <input type="button" [value]="total">
-<button class="btn btn-info" (click)="increment()">+</button>
+<button class="btn" (click)="increment()" style="color: white;">+</button>
     </div>
 </div>

@@ -1,15 +1,16 @@
 <br>
 <br>
 <br>
+<section>
 <div class="mt-5">
-    <div class="login-form">
+    <div class="box">
     <form [formGroup]="loginform" (ngSubmit)="login()" class="d-flex flex-column" style="margin: solid; margin-right:200px; margin-left:200px">
       
         
     <h2 style="text-align: center;">LOGIN</h2>
     &nbsp;
-        <div class="form-group ">
-          <input type="email" class="form-control" name="useremail" formControlName="useremail" placeholder="enter email">
+        <div class="form-group " >
+          <input style="background: transparent;" type="email" class="form-control" name="useremail" formControlName="useremail" placeholder="ENTER EMAIL">
           <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">email is required</label>
           <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">must be valid mail id</label>
     
@@ -17,7 +18,7 @@
         <br>
     
         <div class="form-group ">
-          <input type="password" class="form-control" name="password" formControlName="password" placeholder="enter password">
+          <input style="background: transparent;" type="password" class="form-control" name="password" formControlName="password" placeholder="ENTER PASSWORD">
           <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">password is required</label>
           <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">atleast 6 character</label>
     
@@ -27,14 +28,20 @@
         
         <br>
     
-        <button type="submit" class="btn btn-warning" href="">login</button>
-        <div class="text-center">Already have an account?<a href="register" target="_blank">dont have an account? REGISTER</a>
+        <button type="submit" class="btn btn-warning" href="" style="background: transparent;"><b>LOGIN</b></button>
+        <div class="text-center" style="background: transparent;">DONT HAVE AN ACCOUNT?<a href="register" target="_blank" > REGISTER</a>
         </div>
   
       </form>
     
     </div>
     </div>
+  </section>
+  <nav class="navbar fixed-bottom" style="background-color: #0f8135;">
+    <div class="container-fluid">
+      <a class="nav-link active" style="color: white;" >&copy;www.plantgallery.com</a>
+    </div>
+  </nav>
   <!--
 
 

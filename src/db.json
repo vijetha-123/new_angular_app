@@ -8,13 +8,6 @@
       "Status": "In Stock"
     },
     {
-      "id": 3,
-      "image": "/assets/images/10.jpg",
-      "pname": "Pothos Plant",
-      "pdescription": "pothos is one of the top houseplants for improving indoor air quality",
-      "Status": "Out of Stock"
-    },
-    {
       "id": 4,
       "image": "/assets/images/11.jpg",
       "pname": "Auspcious Jade",
@@ -106,32 +99,86 @@
       "password": "12345678qwer",
       "mobile": "9483909345",
       "id": 25
+    },
+    {
+      "username": "san",
+      "useremail": "san@gmail.com",
+      "password": "san123",
+      "mobile": "2344667678",
+      "id": 26
     }
   ],
   "carts": [
     {
-      "pname": "gooseberry",
+      "pname": "sandalwood",
       "price": 123,
-      "img": "../assets/images/gooseberry.jpg",
-      "id": 1
-    },
-    {
-      "pname": "Ashwagandha",
-      "price": 123,
-      "img": "../assets/images/Ashwagandha.jpg",
-      "id": 2
+      "img": "../assets/images/sandalwood.jpg",
+      "quantity": 1,
+      "id": 22
     },
     {
       "pname": "shatavari",
       "price": 123,
       "img": "../assets/images/shatavari.jpg",
-      "id": 3
+      "quantity": 1,
+      "id": 23
+    },
+    {
+      "pid": "005",
+      "pname": "Amaranthus Seeds",
+      "pdescription": "It grow best in lots of indirect light (direct sunlight can cause the leaves to scorch)",
+      "price": 700,
+      "img": "/assets/images/lantana.jpg",
+      "quantity": 3,
+      "id": 27
     },
     {
       "pname": "sandalwood",
       "price": 123,
       "img": "../assets/images/sandalwood.jpg",
-      "id": 4
+      "quantity": 1,
+      "id": 28
+    },
+    {
+      "pid": "002",
+      "pname": "lavender seeds",
+      "pdescription": "These hardy plants have been known to survive for 20 years or longer",
+      "price": 700,
+      "img": "/assets/images/amaranthus-seeds.jpg",
+      "quantity": 4,
+      "id": 29
+    },
+    {
+      "pname": "sandalwood",
+      "price": 400,
+      "img": "../assets/images/sandalwood.jpg",
+      "quantity": 1,
+      "id": 30
+    },
+    {
+      "pid": "001",
+      "pname": "Kochia plant seeds",
+      "pdescription": "It grow best in lots of indirect light (direct sunlight can cause the leaves to scorch)",
+      "price": 600,
+      "img": "/assets/images/kochia-plant_seeds.jpg",
+      "quantity": 3,
+      "id": 31
+    },
+    {
+      "pname": "Brahmi leaves",
+      "price": 340,
+      "img": "../assets/images/Brahmi leaves.jpg",
+      "quantity": 1,
+      "id": 32
+    },
+    {
+      "pid": "005",
+      "pname": "Amaranthus Seeds",
+      "pdescription": "It grow best in lots of indirect light (direct sunlight can cause the leaves to scorch)",
+      "price": 330,
+      "img": "/assets/images/lantana.jpg",
+      "quantity": 3,
+      "id": 33
     }
   ]
 }

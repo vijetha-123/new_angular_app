@@ -2,3 +2,12 @@
     height:100px;
     width: 100px;
 }
+.divv{
+    background-image: url(/assets/images/18.jpg) ; 
+    height: 2000px;
+    width: 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}

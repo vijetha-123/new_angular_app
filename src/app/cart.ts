@@ -1,5 +1,6 @@
 import { Productmodel } from "./productmodel";
 export class Cart {
-   // itemCount:number;
+   product:Productmodel|any;
+    itemCount:number=0;
 
 }

@@ -4,10 +4,11 @@
 
 export const environment = {
   production: false,
-  userapi:"http://localhost:3000/users",
-  cartapi:"http://localhost:3000/carts"
-};
-
+  //userapi:"http://localhost:3000/users",
+  //cartapi:"http://localhost:3000/carts"
+  userapi:"https://heroku-fb-json-server-fakedb.herokuapp.com/users",
+  cartapi:"https://heroku-fb-json-server-fakedb.herokuapp.com/carts",
+}
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

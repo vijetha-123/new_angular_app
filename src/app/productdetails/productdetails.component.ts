@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Productmodel } from '../productmodel';
 import { ProductapiService } from '../productapi.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Validators } from '@angular/forms';
 
 
 @Component({
@@ -22,10 +22,10 @@ export class ProductdetailsComponent implements OnInit {
   ngOnInit(): void {
     this.formvalue=this.formbuilder.group({
       
-      image:[''],
-      pname:[''],
-      pdescription:[''],
-      Status:['']
+      image:['',Validators.required],
+      pname:['',Validators.required],
+      pdescription:['',Validators.required],
+      Status:['',Validators.required]
 
     })
     this.getProducts();

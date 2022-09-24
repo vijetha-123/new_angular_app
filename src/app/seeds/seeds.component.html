@@ -4,16 +4,17 @@
         <!--1st-->
         <div class=" col-lg-3">
             <app-advertise></app-advertise> 
+            <app-advertise></app-advertise>
         </div>
         <!--2nd-->
         <div class="card col-lg-6" style="margin-top: 10px;border-style: solid;border-color: black;">
-        <app-seedsdeals [products]="productdetailss" *ngFor="let productdetailss of seeds"></app-seedsdeals>            
+        <app-seedsdeals [product]="productdetailss" *ngFor="let productdetailss of seeds"></app-seedsdeals>            
         </div>
         <!--3rd-->
         <div class="col-lg-3" >
             
             <app-allproducts></app-allproducts>
-            
+            <app-allproducts></app-allproducts>
             </div>
     </div>
 </div>

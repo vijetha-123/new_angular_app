@@ -12,57 +12,57 @@ export class MedicinalService {
     Pid:1,
     pname:'Ashwagandha',
     pdes:'wqws',
-    price:123,
+    price:250,
     img:'../assets/images/Ashwagandha.jpg'
   },
   {
-    Pid:1,
+    Pid:2,
     pname:'shatavari',
     pdes:'wqws',
-    price:123,
+    price:300,
     img:'../assets/images/shatavari.jpg'
 
   },{
-    Pid:1,
+    Pid:4,
     pname:'sandalwood',
     pdes:'wqws',
-    price:123,
+    price:400,
     img:'../assets/images/sandalwood.jpg'
 
   },{
-    Pid:1,
+    Pid:5,
     pname:'Holy basil',
     pdes:'wqws',
-    price:123,
+    price:250,
     img:'../assets/images/Holy_basil.jpg'
 
   },{
-    Pid:1,
+    Pid:6,
     pname:'gurmar plant',
     pdes:'wqws',
-    price:123,
+    price:320,
     img:'../assets/images/gurmar plant.jpg'
 
   },{
-    Pid:1,
+    Pid:7,
     pname:'gooseberry',
     pdes:'wqws',
-    price:123,
+    price:150,
     img:'../assets/images/gooseberry.jpg'
 
   },
   {
-    Pid:1,
+    Pid:8,
     pname:'gale of the wind',
     pdes:'wqws',
-    price:123,
+    price:280,
     img:'../assets/images/gale of thewind.jpg'
 
   },{
-    Pid:1,
+    Pid:9,
     pname:'Brahmi leaves',
     pdes:'wqws',
-    price:123,
+    price:340,
     img:'../assets/images/Brahmi leaves.jpg'
 
   }

@@ -1,9 +1,11 @@
 <br>
 <br>
 <br>
+<br>
+<div class="divv">
 <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-        <h1 style="color:aqua">PRODUCTDETAILS</h1>
+        <h1 style="color:aqua;">PRODUCTDETAILS</h1>
         <div class="d-flex">
             <button (click)="clickAddproducts()" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="fa-solid fa-plus"></i></button>
@@ -52,7 +54,8 @@
           <form [formGroup]="formvalue">
             <div class="mb-3">
                 <label class="form-label">name</label>
-                <input type="pname" class="form-control" formControlName="pname">
+                <input type="pname" class="form-control" formControlName="pname" required minlength="4">
+                
             </div>
             <div class="mb-3">
                 <label class="form-label">description</label>
@@ -77,3 +80,4 @@
       </div>
     </div>
   </div>
+</div>

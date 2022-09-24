@@ -22,6 +22,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { IndoorComponent } from './indoor/indoor.component';
+import { MedchildComponent } from './medplants/medchild/medchild.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { IndoorComponent } from './indoor/indoor.component';
     ContactdetailsComponent,
     ProductdetailsComponent,
     RegisterComponent,
-    IndoorComponent
+    IndoorComponent,
+    MedchildComponent
     
   ],
   imports: [

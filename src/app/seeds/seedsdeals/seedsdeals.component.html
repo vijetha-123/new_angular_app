@@ -3,20 +3,22 @@
             <div class="card-body col-lg-12">
                 <div class="row" style="margin-top: 10px;border-style: solid;border-color: black;">
                     <div class="col-lg-3">
-                        <img [src]="products.image">
+                        <img [src]="product.img">
                     </div>
                     <div class="col-lg-9" style="margin-top:20px">
                         <div>
-                            {{products.pname}}
+                            {{product.pname}}
                             <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
                         </div>
                         <div [hidden]="productdetail">
-                                {{products.pdescription}}
+                                {{product.pdescription}}
+                                Price: {{product.price | currency:'INR'}}
                         </div>
-                    </div>
-                </div>
-            
-
+                        <!--new-->
+                        
+              <input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;border-radius:10px;" min="1" max="25">
+                <button class="btn btn-dark m-3" (click)="addtoCart(product)" style="width:150px;border-radius:10px;">ADD TO CART</button>  
+            </div>
+            </div>
         </div>
-
     </div>
