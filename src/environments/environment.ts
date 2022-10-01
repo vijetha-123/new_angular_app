@@ -5,9 +5,9 @@
 export const environment = {
   production: false,
   //userapi:"http://localhost:3000/users",
-  adminapi:"http://localhost:3000/admin",
-  userapi:"https://heroku-fb-json-server-fakedb.herokuapp.com/users",
-  cartapi:"https://heroku-fb-json-server-fakedb.herokuapp.com/carts",
+  adminapi:"https://heroku-f-json-server-fakedb.herokuapp.com/admin",
+  userapi:"https://heroku-f-json-server-fakedb.herokuapp.com/users",
+  cartapi:"https://heroku-f-json-server-fakedb.herokuapp.com/carts",
 }
 /*
  * For easier debugging in development mode, you can import the following file
