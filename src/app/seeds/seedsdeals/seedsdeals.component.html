@@ -6,10 +6,9 @@
                         <img [src]="product.img">
                     </div>
                     <div class="col-lg-9" style="margin-top:20px">
-                        <div>
+                        <div ><b>
                             {{product.pname}}
-                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
-                        </div>
+                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span></b>
                         <div [hidden]="productdetail">
                                 {{product.pdescription}}
                                 Price: {{product.price | currency:'INR'}}

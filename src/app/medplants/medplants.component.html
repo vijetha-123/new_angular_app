@@ -37,8 +37,9 @@
         <div class="card-body">
           <img [src]=m.img alt="">
           <div>
-          <h5 class="card-title">{{m.pname}}</h5>
-          <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+          <h5 class="card-title" >{{m.pname}}</h5>
+          <br>
+          <!--span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span--!>
         </div>
         <div [hidden]="productdetail">
           <!--p class="stylebinding">{{m.pdes}}</p-->

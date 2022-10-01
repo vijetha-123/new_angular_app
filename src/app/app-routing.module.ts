@@ -10,6 +10,7 @@ import { ContactdetailsComponent } from './contactdetails/contactdetails.compone
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { RegisterComponent } from './register/register.component';
 import { IndoorComponent } from './indoor/indoor.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path:'cont',component:ContactdetailsComponent},
   { path:'proo',component:ProductdetailsComponent},
   { path:'register',component:RegisterComponent},
-  { path: 'indoor',component:IndoorComponent}
+  { path: 'indoor',component:IndoorComponent},
+  { path:'admin',component:AdminComponent}
   
 ];
 

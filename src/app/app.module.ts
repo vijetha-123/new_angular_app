@@ -23,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { IndoorComponent } from './indoor/indoor.component';
 import { MedchildComponent } from './medplants/medchild/medchild.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { MedchildComponent } from './medplants/medchild/medchild.component';
     ProductdetailsComponent,
     RegisterComponent,
     IndoorComponent,
-    MedchildComponent
+    MedchildComponent,
+    AdminComponent
     
   ],
   imports: [

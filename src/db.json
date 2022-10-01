@@ -180,5 +180,11 @@
       "quantity": 3,
       "id": 33
     }
+  ],
+  "admin":[
+    {
+      "useremail": "dishasankesha@gmail.com",
+      "password": "dis12345"
+    }
   ]
 }
